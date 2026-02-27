@@ -1,0 +1,1234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advertiser</title>
+
+    <link rel="stylesheet" href="../css/advertiser.css">
+    <script src="../js/advertiser.js" type="module" defer></script>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="header__container u-container">
+
+            <a href="./" class="header__logo">Blogings</a>
+
+
+            <nav class="header__nav">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item"><a href="#" class="header__nav-link">Блогеры</a></li>
+                    <li class="header__nav-item"><a href="#" class="header__nav-link">Бизнесу</a></li>
+                    <li class="header__nav-item"><a href="#" class="header__nav-link">Площадки</a></li>
+
+                    <li class="header__nav-item custom-dropdown">
+                        <!-- dropdown -->
+                        <details class="custom-dropdown__details">
+                            <summary class="custom-dropdown__summary">
+                                Еще
+                            </summary>
+                        </details>
+                        <div class="custom-dropdown__wrapper">
+                            <ul class="custom-dropdown__list">
+                                <li class="custom-dropdown__item">
+                                    <a href="./" class="custom-dropdown__link">Объявления</a>
+                                </li>
+                                <li class="custom-dropdown__item">
+                                    <a href="./" class="custom-dropdown__link header__nav-item--hidden">Сделки</a>
+                                </li>
+                                <li class="custom-dropdown__item">
+                                    <a href="./" class="custom-dropdown__link header__nav-item--hidden">Кампании</a>
+                                </li>
+                                <li class="custom-dropdown__item">
+                                    <a href="./" class="custom-dropdown__link header__nav-item--hidden">Аккаунты
+                                        рекламодателя</a>
+                                </li>
+                                <li class="custom-dropdown__item">
+                                    <a href="./" class="custom-dropdown__link header__nav-item--hidden">Аккаунт
+                                        блогера</a>
+                                </li>
+                                <li class="custom-dropdown__item">
+                                    <a href="./" class="custom-dropdown__link">Блог</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                </ul>
+            </nav>
+
+            <div class="header__actions">
+                <button class="header__button header__button--register u-btn--purple">Регистрация</button>
+                <button class="header__button header__button--login u-btn--white">Вход</button>
+
+                <a href="./" class="header__user">
+                    <img src="../images/common/avatar.webp" alt="User Avatar" class="header__user-avatar" width="80"
+                        height="80">
+                </a>
+            </div>
+
+            <button type="button" class="header__hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <div class="header__menu">
+                <div class="header__menu-head">
+                    <button type="button" class="header__menu-close">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <mask id="mask0_4059_337" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="4" y="0"
+                                width="12" height="20">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M15.4569 0.783094C15.9586 1.27123 15.9586 2.06266 15.4569 2.55079L7.80067 9.99995L15.4569 17.4491C15.9586 17.9372 15.9586 18.7287 15.4569 19.2168C14.9552 19.7049 14.1418 19.7049 13.6401 19.2168L4.16699 9.99995L13.6401 0.783094C14.1418 0.294958 14.9552 0.294958 15.4569 0.783094Z"
+                                    fill="#006FFD" />
+                            </mask>
+                            <g mask="url(#mask0_4059_337)">
+                                <rect y="-0.000976562" width="19.9992" height="19.9992" fill="#7142DE" />
+                            </g>
+                        </svg>
+                    </button>
+
+                    <span class="header__menu-logo">Blogings</span>
+                </div>
+
+                <div class="header__menu-user">
+                    <img src="../images/common/avatar.webp" alt="" width="80" height="80"
+                        class="header__menu-user-avatar">
+                    <p class="header__menu-user-name">Королёва Мария</p>
+                    <button class="header__menu-user-button u-link--purple">Посмотреть Профиль</button>
+                </div>
+
+                <nav class="header__menu-nav">
+                    <ul class="header__menu-nav-list">
+                        <li class="header__menu-nav-item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="#7142DE">
+                                <use href="../images/common/sprites.svg#icon-home"></use>
+                            </svg>
+                            <a href="#" class="header__menu-nav-link">Главная</a>
+                        </li>
+                        <li class="header__menu-nav-item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="#7142DE">
+                                <use href="../images/common/sprites.svg#icon-bloggers"></use>
+                            </svg>
+                            <a href="#" class="header__menu-nav-link">Блогеры</a>
+                        </li>
+                        <li class="header__menu-nav-item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="#7142DE">
+                                <use href="../images/common/sprites.svg#icon-brands"></use>
+                            </svg>
+                            <a href="#" class="header__menu-nav-link">Бренды</a>
+                        </li>
+                        <li class="header__menu-nav-item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="#7142DE">
+                                <use href="../images/common/sprites.svg#icon-platforms"></use>
+                            </svg>
+                            <a href="#" class="header__menu-nav-link">Площадки</a>
+                        </li>
+                        <li class="header__menu-nav-item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="#7142DE">
+                                <use href="../images/common/sprites.svg#icon-adv"></use>
+                            </svg>
+                            <a href="#" class="header__menu-nav-link">Объявления</a>
+                        </li>
+                        <li class="header__menu-nav-item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="#7142DE">
+                                <use href="../images/common/sprites.svg#icon-deal"></use>
+                            </svg>
+                            <a href="#" class="header__menu-nav-link">Сделки</a>
+                        </li>
+                        <li class="header__menu-nav-item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="#7142DE">
+                                <use href="../images/common/sprites.svg#icon-ad"></use>
+                            </svg>
+                            <a href="#" class="header__menu-nav-link">Рекламные Кампании</a>
+                        </li>
+                        <li class="header__menu-nav-item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="#7142DE">
+                                <use href="../images/common/sprites.svg#icon-advertisers"></use>
+                            </svg>
+                            <a href="#" class="header__menu-nav-link">Рекламодатели</a>
+                        </li>
+                        <li class="header__menu-nav-item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="#7142DE">
+                                <use href="../images/common/sprites.svg#icon-balance"></use>
+                            </svg>
+                            <a href="#" class="header__menu-nav-link">Баланс</a>
+                        </li>
+
+                    </ul>
+                </nav>
+
+                <ul class="header__menu-actions">
+                    <li class="header__menu-actions-item">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="#9A9696">
+                            <use href="../images/common/sprites.svg#icon-settings"></use>
+                        </svg>
+                        <a href="#" class="header__menu-actions-link">Настройки</a>
+                    </li>
+                    <li class="header__menu-actions-item">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="#9A9696">
+                            <use href="../images/common/sprites.svg#icon-exit"></use>
+                        </svg>
+                        <a href="#" class="header__menu-actions-link">Выход</a>
+                    </li>
+                </ul>
+
+            </div>
+
+            <div class="header__search">
+
+                <button type="button" class="header__search-btn">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <mask id="mask0_4059_2010" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0"
+                            width="20" height="20">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M8.03359 0.416992C3.83005 0.416992 0.416504 3.79743 0.416504 7.97465C0.416504 12.1519 3.83005 15.5323 8.03359 15.5323C9.60077 15.5323 11.0586 15.0623 12.2702 14.2563L17.2394 19.1846C17.7756 19.7163 18.6435 19.7163 19.1796 19.1845C19.7177 18.6509 19.7177 17.7843 19.1796 17.2507L14.2422 12.354C15.1288 11.1187 15.6507 9.60681 15.6507 7.97465C15.6507 3.79743 12.2371 0.416992 8.03359 0.416992ZM3.16379 7.97465C3.16379 5.31247 5.34082 3.14848 8.03359 3.14848C10.7264 3.14848 12.9034 5.31247 12.9034 7.97465C12.9034 10.6368 10.7264 12.8008 8.03359 12.8008C5.34082 12.8008 3.16379 10.6368 3.16379 7.97465Z"
+                                fill="#006FFD" />
+                        </mask>
+                        <g mask="url(#mask0_4059_2010)">
+                            <rect width="20" height="19.9997" fill="#7142DE" />
+                        </g>
+                    </svg>
+                </button>
+
+            </div>
+
+        </div>
+    </header>
+
+    <main>
+
+        <!-- HERO -->
+        <section class="hero">
+            <div class="hero__container u-container">
+
+                <h1 class="hero__title">
+                    <span class="hero__title-main">Маркетплейс</span><br>
+                    блогеров с проверенной статистикой
+                </h1>
+                <p class="hero__description">
+                    От поиска исполнителя до завершения сделки. Безопасные сделки, автоматическая маркировка, отчётность
+                    и
+                    статистика — всё в одном месте
+                </p>
+
+            </div>
+
+            <div class="hero__dots" style="background-image: url(../images/common/bg-dot-purple.svg);"></div>
+
+            <picture class="hero__ellipse hero__ellipse--purple">
+                <source media="(max-width: 833px)" srcset="../images/advertiser/hero/hero-ellipse-purple--mobile.svg">
+                <source media="(max-width: 1023px)" srcset="../images/advertiser/hero/hero-ellipse-orange--tablet.svg">
+
+                <img src="../images/advertiser/hero/hero-ellipse-orange.svg" alt="" width="416" height="868"
+                    aria-hidden="true" draggable="false">
+            </picture>
+        </section>
+
+
+        <!-- FOR BUSINESS -->
+        <section class="for-business">
+            <div class="for-business__container u-container">
+
+                <div class="for-business__content">
+                    <div class="for-business__bg"
+                        style="background-image: url(../images/common/for-business/for-business-bg.svg);">
+                    </div>
+
+                    <div class="for-business__text">
+                        <h2 class="for-business__title">
+                            <span class="for-business__title-desktop">Бизнесу</span>
+                            <span class="for-business__title-mobile">Я бизнес</span>
+                        </h2>
+
+                        <ul class="for-business__list">
+                            <!-- 1 -->
+                            <li class="for-business-future">
+                                <p class="for-business-future__text">
+                                    500+ блогеров с проверенной статистикой
+                                </p>
+                                <div class="for-business-future__decoration">
+                                    <svg width="198" height="205" viewBox="0 0 198 205" stroke="#ee6429">
+                                        <use href="../images/common/sprites.svg#spray"></use>
+                                    </svg>
+                                </div>
+                            </li>
+
+                            <!-- 2 -->
+                            <li class="for-business-future">
+                                <p class="for-business-future__text">
+                                    Маркировка и отчётность -<span class="u-text-accent--orange">автоматически</span>
+                                </p>
+                                <div class="for-business-future__decoration">
+                                    <svg width="263" height="62" viewBox="0 0 263 62" stroke="#ee6429">
+                                        <use href="../images/common/sprites.svg#semicircle"></use>
+                                    </svg>
+                                </div>
+                            </li>
+
+                            <!-- 3 -->
+                            <li class="for-business-future">
+                                <p class="for-business-future__text">
+                                    Платите только после размещения
+                                </p>
+                                <div class="for-business-future__decoration">
+                                    <svg width="180" height="9" viewBox="0 0 180 9" stroke="#ee6429">
+                                        <use href="../images/common/sprites.svg#line-1"></use>
+                                    </svg>
+                                    <svg width="177" height="5" viewBox="0 0 177 5" stroke="#ee6429">
+                                        <use href="../images/common/sprites.svg#line-2"></use>
+                                    </svg>
+                                </div>
+
+                            </li>
+
+                        </ul>
+
+                        <a href="./#header" class="for-business__link">Найти блогера</a>
+
+                    </div>
+
+                    <div class="for-business__image">
+                        <picture class="for-business__image-img">
+                            <source media="(max-width: 833px)"
+                                srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                                type="image/gif">
+
+                            <img src="../images/common/for-business/for-business-image.webp" alt="Блогерам" width="608"
+                                height="895" fetchpriority="high" loading="eager" draggable="false">
+                        </picture>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- STEPS -->
+        <section class="steps">
+            <div class="steps__container u-container">
+
+                <div class="steps__head">
+                    <h2 class="steps__title u-title-section">
+                        Запуск рекламы за
+                        <span class="u-text-accent--purple">10 минут</span>
+                    </h2>
+                    <a href="./#header" class="steps__link u-link--purple">Добавить площадку</a>
+                    <div class="steps__dots" style="background-image: url(../images/common/bg-dot-purple.svg);"></div>
+                </div>
+
+                <ul class="steps__list">
+                    <!-- 1 -->
+                    <li class="steps__list-item steps__list-item--large">
+                        <article class="steps-card">
+                            <h3 class="steps-card__title">
+                                Найдите блогера
+                            </h3>
+                            <p class="steps-card__description">
+                                Ищите в каталоге площадок
+                                с фильтрами и реальной статистикой или опубликуйте объявление — блогеры откликнутся сами
+                            </p>
+                        </article>
+                    </li>
+                    <!-- 2 -->
+                    <li class="steps__list-item">
+                        <article class="steps-card">
+                            <h3 class="steps-card__title">
+                                Предложите сделку
+                            </h3>
+                            <p class="steps-card__description">
+                                Укажите реквизиты организации, загрузите креативы, согласуйте детали размещения в чате
+                                сделки
+                            </p>
+                        </article>
+                    </li>
+                    <!-- 1 -->
+                    <li class="steps__list-item">
+                        <article class="steps-card">
+                            <h3 class="steps-card__title">
+                                Оплатите
+                            </h3>
+                            <p class="steps-card__description">
+                                Средства резервируются на платформе. После публикации подтвердите выполнение и скачайте
+                                закрывающие документы
+                            </p>
+                        </article>
+                    </li>
+                </ul>
+
+                <picture class="steps__line steps__line--advertiser">
+                    <source media="(max-width:1023px )" srcset="../images/common/steps/steps-line-2--tablet.svg">
+
+                    <img src="../images/common/steps/steps-line-2.svg" alt="" width="987" height="632" loading="lazy"
+                        decoding="async" draggable="false" aria-hidden="true">
+                </picture>
+
+
+
+            </div>
+        </section>
+
+
+        <!-- ACCORDIONS -->
+        <section class="accordions">
+            <div class="accordions__container u-container">
+
+                <div class="accordions__content">
+                    <h2 class="accordions__title u-title-section">
+                        Как мы защищаем ваше время и деньги
+                    </h2>
+
+                    <ul class="accordions__list">
+
+                        <!-- 1 -->
+                        <li class="accordions-item accordions-item--blue">
+                            <details class="accordions-item__details" name="protect">
+                                <summary class="accordions-item__summary">
+                                    Интеграция с API платформ
+                                </summary>
+                            </details>
+
+                            <div class="accordions-item__wrapper">
+                                <article class="accordions-item__content">
+                                    <h3 class="accordions-item__title">
+                                        Интеграция с API платформ
+                                    </h3>
+                                    <p class="accordions-item__description">
+                                        Автоматически собираем охваты, подписчиков, вовлечённость из YouTube, Telegram,
+                                        VK, TikTok. Данные
+                                        обновляются каждые 24 часа.
+                                    </p>
+                                </article>
+                            </div>
+                        </li>
+
+                        <!-- 2 -->
+                        <li class="accordions-item accordions-item--beige">
+                            <details class="accordions-item__details" name="protect">
+                                <summary class="accordions-item__summary">
+                                    Безопасные сделки
+                                </summary>
+                            </details>
+
+                            <div class="accordions-item__wrapper">
+                                <article class="accordions-item__content">
+                                    <h3 class="accordions-item__title">
+                                        Безопасные сделки
+                                    </h3>
+                                    <p class="accordions-item__description">
+                                        Деньги резервируются на платформе до подтверждения выполнения. Блогер защищён от
+                                        неоплаты,
+                                        рекламодатель — от некачественной работы.
+                                    </p>
+                                </article>
+                            </div>
+                        </li>
+
+                        <!-- 3 -->
+                        <li class="accordions-item accordions-item--orange">
+                            <details class="accordions-item__details" name="protect">
+                                <summary class="accordions-item__summary">
+                                    Автоматическая маркировка рекламы
+                                </summary>
+                            </details>
+
+                            <div class="accordions-item__wrapper">
+                                <article class="accordions-item__content">
+                                    <h3 class="accordions-item__title">
+                                        Автоматическая маркировка рекламы
+                                    </h3>
+                                    <p class="accordions-item__description">
+                                        Интеграция с ОРД для получения токенов, автоматическая отправка отчётности в
+                                        ЕРИР, расчёт и уплата
+                                        рекламного сбора.
+                                    </p>
+                                </article>
+                            </div>
+                        </li>
+
+                        <!-- 4 -->
+                        <li class="accordions-item accordions-item--pink">
+                            <details class="accordions-item__details" name="protect">
+                                <summary class="accordions-item__summary">
+                                    Документооборот без бюрократии
+                                </summary>
+                            </details>
+
+                            <div class="accordions-item__wrapper">
+                                <article class="accordions-item__content">
+                                    <h3 class="accordions-item__title">
+                                        Документооборот без бюрократии
+                                    </h3>
+                                    <p class="accordions-item__description">
+                                        Автоматическое формирование актов, счетов и закрывающих документов. Всё готово
+                                        для вашей
+                                        бухгалтерии.
+                                    </p>
+                                </article>
+                            </div>
+                        </li>
+
+                    </ul>
+
+                    <picture class="accordions__arrow">
+                        <source media="(max-width:1023px)"
+                            srcset="../images/common/accordions/accordions-arrow--tablet.svg">
+
+                        <img src="../images/common/accordions/accordions-arrow.svg" alt="" width="411" height="104"
+                            loading="lazy" decoding="async" draggable="false" aria-hidden="true">
+                    </picture>
+
+                    <picture class="accordions__ellipse">
+                        <source media="(max-width:1023px)"
+                            srcset="../images/common/accordions/accordions-ellipse--tablet.svg">
+
+                        <img src="../images/common/accordions/accordions-ellipse.svg" alt="" width="456" height="279"
+                            loading="lazy" decoding="async" draggable="false" aria-hidden="true">
+                    </picture>
+                </div>
+
+            </div>
+
+            <picture class="accordions__decoration">
+                <source media="(max-width: 833px)" srcset="../images/common/accordions/accordions-ellipse--mobile.svg">
+
+                <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt=""
+                    width="127" height="301" loading="lazy" decoding="async" draggable="false" aria-hidden="true">
+            </picture>
+        </section>
+
+
+        <!-- FEATURES -->
+        <section class="features">
+            <div class="features__container u-container">
+
+                <div class="features__content">
+                    <h2 class="features__title u-title-section">
+                        Размещайте рекламу
+                        <span class="u-text-accent--purple">
+                            без переплат и рисков
+                        </span>
+                    </h2>
+
+                    <ul class="features__list">
+                        <!-- 1 -->
+                        <li class="features__list-item">
+                            <h3>Платите только за выполненное</h3>
+                            <p>
+                                Деньги уходят блогеру только после вашего подтверждения.
+                                Не выполнил — возвращаем деньги.
+                            </p>
+                        </li>
+                        <!-- 2 -->
+                        <li class="features__list-item">
+                            <h3>Только проверенная статистика</h3>
+                            <p>
+                                Данные из API соцсетей в реальном времени. Видите настоящие охваты, а не фотошоп.
+                            </p>
+                        </li>
+                        <!-- 3 -->
+                        <li class="features__list-item">
+                            <h3>Маркировка — наша забота</h3>
+                            <p>
+                                Не думайте про ОРД, ЕРИР и штрафы до 500 000 ₽. Мы всё делаем автоматически.
+                            </p>
+                        </li>
+                        <!-- 4 -->
+                        <li class="features__list-item">
+                            <h3>Поиск за 5 минут</h3>
+                            <p>
+                                Фильтры по платформе, тематике, цене, вовлечённости. От микроблогеров до миллионников.
+                            </p>
+                        </li>
+                        <!-- 5 -->
+                        <li class="features__list-item">
+                            <h3>Репутация блогеров</h3>
+                            <p>
+                                Видно количество выполненных сделок
+                                и отзывы. Меньше риска — больше предсказуемости.
+                            </p>
+                        </li>
+                    </ul>
+
+                    <ul class="features__gallery">
+                        <!-- 1 -->
+                        <li class="features__gallery-item">
+                            <picture>
+                                <img src="../images/common/features/features-1.webp" alt="" width="268" height="212"
+                                    loading="lazy" decoding="async" draggable="false">
+                            </picture>
+                        </li>
+                        <!-- 2 -->
+                        <li class="features__gallery-item">
+                            <picture>
+                                <img src="../images/common/features/features-2.webp" alt="" width="268" height="212"
+                                    loading="lazy" decoding="async" draggable="false">
+                            </picture>
+                        </li>
+                        <!-- 3 -->
+                        <li class="features__gallery-item">
+                            <picture>
+                                <img src="../images/common/features/features-3.webp" alt="" width="235" height="448"
+                                    loading="lazy" decoding="async" draggable="false">
+                            </picture>
+                        </li>
+                    </ul>
+
+                    <div class="features__dots" style="background-image: url(../images/common/bg-dot-purple.svg);">
+                    </div>
+
+                    <picture class="features__profile features__profile--advertiser">
+                        <source media="(max-width:833px )" srcset="../images/common/features/features-profile.webp"
+                            type="image/webp">
+
+                        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt=""
+                            width="55" height="55" loading="lazy" decoding="async" draggable="false">
+                    </picture>
+
+                    <picture class="features__shield">
+                        <source media="(max-width:833px )" srcset="../images/common/shield.webp" type="image/webp">
+
+                        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt=""
+                            width="55" height="55" loading="lazy" decoding="async" draggable="false">
+                    </picture>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- STATISTICS -->
+        <section class="statistics">
+            <div class="statistics__container u-container">
+
+                <ul class="statistics__list">
+
+                    <!-- 1 -->
+                    <li class="statistics-item">
+                        <span class="statistics-item__text-main u-text-accent--purple">500+</span>
+                        <span class="statistics-item__text-secondary">блогеров</span>
+                        <div class="statistics-item__decoration">
+                            <svg width="88" height="93" viewBox="0 0 88 93" fill="#7142DE">
+                                <use href="../images/common/sprites.svg#arrow-pointer-1"></use>
+                            </svg>
+                        </div>
+                    </li>
+
+
+                    <!-- 2 -->
+                    <li class="statistics-item">
+                        <span class="statistics-item__text-main">800+</span>
+                        <span class="statistics-item__text-secondary">площадок</span>
+                        <div class="statistics-item__decoration">
+                            <svg width="298" height="75" viewBox="0 0 298 75" stroke="#7142DE">
+                                <use href="../images/common/sprites.svg#semicircle"></use>
+                            </svg>
+                        </div>
+                    </li>
+
+                    <!-- 3 -->
+                    <li class="statistics-item">
+                        <span class="statistics-item__text-main">1200+</span>
+                        <span class="statistics-item__text-secondary">сделок</span>
+                        <div class="statistics-item__decoration">
+                            <svg width="180" height="9" viewBox="0 0 180 9" stroke="#7142DE">
+                                <use href="../images/common/sprites.svg#line-1"></use>
+                            </svg>
+                        </div>
+                    </li>
+
+                    <!-- 4 -->
+                    <li class="statistics-item">
+                        <span class="statistics-item__text-main">15 млн ₽</span>
+                        <span class="statistics-item__text-secondary">выплачено</span>
+                        <div class="statistics-item__decoration">
+                            <svg width="197" height="205" viewBox="0 0 197 205" stroke="#7142DE">
+                                <use href="../images/common/sprites.svg#spray"></use>
+                            </svg>
+                        </div>
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <div class="statistics__dots" style="background-image: url(../images/common/bg-dot-purple.svg);"></div>
+
+            <picture class="statistics__image">
+                <source media="(max-width: 833px)"
+                    srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                    type="image/gif">
+                <source media="(max-width: 1023px)" srcset="../images/common/statistics/statistics-image--tablet.webp"
+                    type="image/webp">
+
+                <img src="../images/common/statistics/statistics-image.webp" alt="График" width="326" height="326"
+                    loading="lazy" decoding="async" draggable="false">
+            </picture>
+
+            <picture class="statistics__ellipse-top">
+                <source media="(max-width: 833px)"
+                    srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                    type="image/gif">
+                <source media="(max-width: 1023px)"
+                    srcset="../images/common/statistics/statistics-ellipse-top-right--tablet.svg">
+
+                <img src="../images/common/statistics/statistics-ellipse-top-right.svg" alt="" width="372" height="647"
+                    loading="lazy" decoding="async" draggable="false" aria-hidden="true">
+            </picture>
+
+            <picture class="statistics__ellipse-bottom">
+                <source media="(max-width: 833px)"
+                    srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                    type="image/gif">
+                <source media="(max-width: 1023px)"
+                    srcset="../images/common/statistics/statistics-ellipse-bottom-left--tablet.svg">
+
+                <img src="../images/common/statistics/statistics-ellipse-bottom-left.svg" alt="" width="319"
+                    height="647" loading="lazy" decoding="async" draggable="false" aria-hidden="true">
+            </picture>
+
+        </section>
+
+
+        <!-- REVIEWS -->
+        <section class="reviews">
+            <div class="reviews__container u-container">
+
+                <div class="reviews__content">
+                    <h2 class="reviews__title u-title-section">Что говорят пользователи</h2>
+                    <ul class="reviews__list">
+
+                        <!-- 1 -->
+                        <li class="reviews__list-item">
+                            <article class="reviews-card reviews-card--purple">
+                                <h3 class="reviews-card__author">
+                                    Алексей
+                                </h3>
+                                <p class="reviews-card__about">
+                                    (YouTube-канал 5K подписчиков, обзоры гаджетов)
+                                </p>
+                                <blockquote class="reviews-card__content">
+                                    <p>
+                                        Первый заказ получил через 3 дня после добавления канала
+                                    </p>
+                                </blockquote>
+                                <picture class="reviews-card__image">
+                                    <img src="../images/common/reviews/reviews-1.webp" alt="Алексей" width="76"
+                                        height="76" loading="lazy" decoding="async" draggable="false">
+                                </picture>
+                                <div class="reviews-card__decoration">
+                                    <svg width="45" height="55" viewBox="0 0 45 55" fill="#7142DE">
+                                        <use href="../images/common/sprites.svg#review-decoration"></use>
+                                    </svg>
+                                </div>
+                            </article>
+                        </li>
+
+                        <!-- 2 -->
+                        <li class="reviews__list-item">
+                            <article class="reviews-card reviews-card--orange">
+                                <h3 class="reviews-card__author">
+                                    Мария
+                                </h3>
+                                <p class="reviews-card__about">
+                                    (маркетолог e-commerce бренда)
+                                </p>
+                                <blockquote class="reviews-card__content">
+                                    <p>
+                                        Нашли 12 блогеров за вечер. Раньше тратили недели на поиск в чатах
+                                    </p>
+                                </blockquote>
+                                <picture class="reviews-card__image">
+                                    <img src="../images/common/reviews/reviews-2.webp" alt="Мария" width="76"
+                                        height="76" loading="lazy" decoding="async" draggable="false">
+                                </picture>
+                                <div class="reviews-card__decoration">
+                                    <svg width="45" height="55" viewBox="0 0 45 55" fill="#f6693c">
+                                        <use href="../images/common/sprites.svg#review-decoration"></use>
+                                    </svg>
+                                </div>
+                            </article>
+                        </li>
+
+                        <!-- 3 -->
+                        <li class="reviews__list-item">
+                            <article class="reviews-card reviews-card--blue">
+                                <h3 class="reviews-card__author">
+                                    Дмитрий
+                                </h3>
+                                <p class="reviews-card__about">
+                                    (Telegram-канал 50K подписчиков, финансы)
+                                </p>
+                                <blockquote class="reviews-card__content">
+                                    <p>
+                                        Наконец-то не думаю про маркировку и ЕРИР. Всё делается автоматически
+                                    </p>
+                                </blockquote>
+                                <picture class="reviews-card__image">
+                                    <img src="../images/common/reviews/reviews-3.webp" alt="Дмитрий" width="76"
+                                        height="76" loading="lazy" decoding="async" draggable="false">
+                                </picture>
+                                <div class="reviews-card__decoration">
+                                    <svg width="45" height="55" viewBox="0 0 45 55" fill="#6c87dc">
+                                        <use href="../images/common/sprites.svg#review-decoration"></use>
+                                    </svg>
+                                </div>
+                            </article>
+                        </li>
+
+                        <!-- 4 -->
+                        <li class="reviews__list-item">
+                            <article class="reviews-card reviews-card--red">
+                                <h3 class="reviews-card__author">
+                                    Анна
+                                </h3>
+                                <p class="reviews-card__about">
+                                    (VK-сообщество 15K участников, мода)
+                                </p>
+                                <blockquote class="reviews-card__content">
+                                    <p>
+                                        Статистика обновляется сама, не нужно ничего доказывать рекламодателям
+                                    </p>
+                                </blockquote>
+                                <picture class="reviews-card__image">
+                                    <img src="../images/common/reviews/reviews-4.webp" alt="Анна" width="76" height="76"
+                                        loading="lazy" decoding="async" draggable="false">
+                                </picture>
+                                <div class="reviews-card__decoration">
+                                    <svg width="45" height="55" viewBox="0 0 45 55" fill="#a1325c">
+                                        <use href="../images/common/sprites.svg#review-decoration"></use>
+                                    </svg>
+                                </div>
+                            </article>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- TERMS -->
+        <section class="terms">
+            <div class="terms__container u-container">
+
+                <div class="terms__content">
+                    <h2 class="terms__title u-title-section">
+                        Прозрачные условия
+                    </h2>
+                    <p class="terms__description">
+                        Комиссия — <span class="u-text-accent--purple">7%</span> от суммы сделки
+                    </p>
+                    <h3 class="terms__subtitle">
+                        Что входит в комиссию:
+                    </h3>
+
+                    <ul class="terms__list">
+                        <!-- 1 -->
+                        <li class="terms__list-item">
+                            Передача отчётности в ЕРИР
+                        </li>
+                        <!-- 2 -->
+                        <li class="terms__list-item">
+                            Гарантия выполнения для рекламодателя
+                        </li>
+                        <!-- 3 -->
+                        <li class="terms__list-item">
+                            Арбитраж в случае спора
+                        </li>
+                        <!-- 4 -->
+                        <li class="terms__list-item">
+                            Закрывающие документы
+                        </li>
+                        <!-- 5 -->
+                        <li class="terms__list-item">
+                            Получение токена маркировки
+                        </li>
+                        <!-- 6 -->
+                        <li class="terms__list-item">
+                            Гарантия оплаты для блогера
+                        </li>
+                        <!-- 7 -->
+                        <li class="terms__list-item">
+                            Уплата рекламного сбора
+                        </li>
+                    </ul>
+
+                    <picture class="terms__document">
+                        <source media="(max-width: 833px)" srcset="../images/common/terms/terms-document--mobile.webp"
+                            type="image/webp">
+                        <source media="(max-width: 1023px)"
+                            srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                            type="image/gif">
+
+                        <img src="../images/common/terms/terms-document.svg" alt="условия" width="691" height="691"
+                            loading="lazy" decoding="async" draggable="false">
+                    </picture>
+
+                    <picture class="terms__document-small">
+                        <source media="(max-width: 833px)" srcset="../images/common/terms/terms-document--mobile.webp"
+                            type="image/webp">
+
+                        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                            alt="условия" width="43" height="43" loading="lazy" decoding="async" draggable="false">
+                    </picture>
+
+                    <picture class="terms__shield">
+                        <source media="(max-width: 833px)" srcset="../images/common/shield.webp" type="image/webp">
+
+                        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                            alt="условия" width="42" height="42" loading="lazy" decoding="async" draggable="false">
+                    </picture>
+
+
+
+                </div>
+
+            </div>
+
+            <picture class="terms__ellipse-purple">
+                <source media="(max-width: 833px)"
+                    srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                    type="image/gif">
+                <source media="(max-width: 1023px)" srcset="../images/common/terms/terms-ellipse-purple--tablet.svg">
+
+                <img src="../images/common/terms/terms-ellipse-purple.svg" alt="" width="480" height="991"
+                    loading="lazy" decoding="async" draggable="false" aria-hidden="true">
+            </picture>
+
+            <picture class="terms__ellipse-orange">
+                <source media="(max-width: 833px)"
+                    srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                    type="image/gif">
+                <source media="(max-width: 1023px)" srcset="../images/common/terms/terms-ellipse-orange--tablet.svg">
+
+                <img src="../images/common/terms/terms-ellipse-orange.svg" alt="" width="585" height="1119"
+                    loading="lazy" decoding="async" draggable="false" aria-hidden="true">
+            </picture>
+        </section>
+
+
+        <!-- PROTECTION -->
+        <section class="protection">
+            <div class="protection__container u-container">
+
+                <div class="protection__title">
+                    <h2 class="protection__title-text u-title-section">
+                        Защита для <span class="u-text-accent--purple">обеих сторон</span>
+                    </h2>
+
+                    <picture class="protection__title-image">
+                        <img src="../images/common/shield.webp" alt="Защита" width="277" height="277" loading="lazy"
+                            decoding="async" draggable="false">
+                    </picture>
+                </div>
+
+                <div class="protection-bloggers">
+                    <h3 class="protection-bloggers__title">
+                        <span>для блогеров</span>
+                        <svg fill="none" width="395" height="205" viewBox="0 0 395 205" stroke="#7142DE">
+                            <use href="../images/common/sprites.svg#spray-2"></use>
+                        </svg>
+                    </h3>
+
+                    <ul class="protection-bloggers__list">
+                        <!-- 1 -->
+                        <li class="protection-bloggers__list-item">
+                            <p>
+                                Если рекламодатель не подтверждает выполненную работу - мы проверяем сами и принимаем
+                                решение
+                            </p>
+                            <svg width="130" height="131" viewBox="0 0 130 131" fill="#7142DE">
+                                <use href="../images/common/sprites.svg#arrow-pointer-2"></use>
+                            </svg>
+                        </li>
+                        <!-- 2 -->
+                        <li class="protection-bloggers__list-item">
+                            <p>
+                                Деньги резервируются до публикации - вы не работаете в долг
+                            </p>
+                            <svg width="234" height="122" viewBox="0 0 234 122" fill="#7142DE">
+                                <use href="../images/common/sprites.svg#arrow-pointer-3"></use>
+                            </svg>
+                        </li>
+                        <!-- 3 -->
+                        <li class="protection-bloggers__list-item">
+                            <p>
+                                Если возник спор - платформа выступает арбитром
+                            </p>
+                            <svg width="234" height="122" viewBox="0 0 234 122" fill="#7142DE">
+                                <use href="../images/common/sprites.svg#arrow-pointer-3"></use>
+                            </svg>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="protection-advertisers">
+                    <h3 class="protection-advertisers__title">
+                        <span>для рекламодателей</span>
+                        <svg width="263" height="62" viewBox="0 0 263 62" stroke="#7142DE">
+                            <use href="../images/common/sprites.svg#semicircle"></use>
+                        </svg>
+                    </h3>
+
+                    <ul class="protection-advertisers__list">
+                        <!-- 1 -->
+                        <li class="protection-advertisers__list-item">
+                            <p>
+                                Деньги переводятся блогеру только после вашего подтверждения
+                            </p>
+                            <svg width="292" height="99" viewBox="0 0 292 99" fill="#7142DE">
+                                <use href="../images/common/sprites.svg#arrow-pointer-4"></use>
+                            </svg>
+                        </li>
+                        <!-- 2 -->
+                        <li class="protection-advertisers__list-item">
+                            <p>
+                                Если блогер не выполнил условия - деньги возвращаются на ваш баланс
+                            </p>
+                            <svg width="136" height="80" viewBox="0 0 136 80" fill="#7142DE">
+                                <use href="../images/common/sprites.svg#arrow-pointer-5"></use>
+                            </svg>
+                        </li>
+                        <!-- 3 -->
+                        <li class="protection-advertisers__list-item">
+                            <p>
+                                Если возник спор - платформа выступает арбитром
+                            </p>
+                            <svg width="234" height="122" viewBox="0 0 234 122" fill="#7142DE">
+                                <use href="../images/common/sprites.svg#arrow-pointer-3"></use>
+                            </svg>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <picture class="protection__ellipse">
+                <source media="(max-width:833px )" srcset="../images/common/protection/protection-ellipse--mobile.svg">
+
+                <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt=""
+                    width="375" height="845" loading="lazy" decoding="async" draggable="false" aria-hidden="true">
+            </picture>
+        </section>
+
+
+        <!-- PLATFORMS -->
+        <section class="platforms">
+            <div class="platforms__container u-container">
+
+                <div class="platforms__title">
+                    <h2 class="platforms__title-text u-title-section">
+                        Любая платформа — <span class="u-text-accent--purple">один интерфейс</span>
+                    </h2>
+                    <picture class="platforms__title-image">
+                        <img src="../images/common/platforms/platforms-pointer.svg" alt="" width="99" height="90"
+                            loading="lazy" decoding="async" draggable="false">
+                    </picture>
+                </div>
+                <ul class="platforms__list">
+
+                    <!-- 1 -->
+                    <li class="platforms__list-item">
+                        <article class="platforms-card platforms-card--yt">
+                            <picture class="platforms-card__image">
+                                <img src="../images/common/platforms/platforms-yt.webp" alt="Youtube" width="338"
+                                    height="291" loading="lazy" decoding="async" draggable="false">
+                            </picture>
+                            <h3 class="platforms-card__title">Youtube</h3>
+                            <p class="platforms-card__description">интеграции, обзоры, Shorts</p>
+                        </article>
+                    </li>
+
+                    <!-- 2 -->
+                    <li class="platforms__list-item">
+                        <article class="platforms-card platforms-card--tg">
+                            <picture class="platforms-card__image">
+                                <img src="../images/common/platforms/platforms-tg.webp" alt="Telegram" width="325"
+                                    height="279" loading="lazy" decoding="async" draggable="false">
+                            </picture>
+                            <h3 class="platforms-card__title">Telegram</h3>
+                            <p class="platforms-card__description">
+                                публикации 1/24, 2/48, 3/72, 30 дней, репосты
+                            </p>
+                        </article>
+                    </li>
+
+                    <!-- 3 -->
+                    <li class="platforms__list-item">
+                        <article class="platforms-card platforms-card--vk">
+                            <picture class="platforms-card__image">
+                                <img src="../images/common/platforms/platforms-vk.webp" alt="Vk" width="280"
+                                    height="286" loading="lazy" decoding="async" draggable="false">
+                            </picture>
+                            <h3 class="platforms-card__title">Vk</h3>
+                            <p class="platforms-card__description">посты, сторис, клипы</p>
+                        </article>
+                    </li>
+
+                    <!-- 4 -->
+                    <li class="platforms__list-item">
+                        <article class="platforms-card platforms-card--tt">
+                            <picture class="platforms-card__image">
+                                <img src="../images/common/platforms/platforms-tt.webp" alt="TikTok" width="321"
+                                    height="302" loading="lazy" decoding="async" draggable="false">
+                            </picture>
+                            <h3 class="platforms-card__title">TikTok</h3>
+                            <p class="platforms-card__description">короткие видео, сторис</p>
+                        </article>
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <div class="platforms__dots" style="background-image: url(../images/common/bg-dot-purple.svg);"></div>
+        </section>
+
+
+        <!-- START -->
+        <section class="start">
+            <div class="start__container u-container">
+
+                <div class="start__title ">
+                    <h2 class="start__title-text u-title-section">
+                        Начните <span class="u-text-accent--purple">прямо сейчас</span>
+                    </h2>
+
+                    <div class="start__title-arrow start__title-arrow--left">
+                        <svg width="100" height="111" viewBox="0 0 130 131" fill="#7142DE">
+                            <use href="../images/common/sprites.svg#arrow-pointer-2"></use>
+                        </svg>
+                    </div>
+                    <div class="start__title-arrow start__title-arrow--right">
+                        <svg width="100" height="111" viewBox="0 0 130 131" fill="#7142DE">
+                            <use href="../images/common/sprites.svg#arrow-pointer-2"></use>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="start-bloggers">
+                    <h3 class="start-bloggers__title">Блогерам</h3>
+                    <p class="start-bloggers__description">
+                        Добавьте площадку — это займёт 5 минут
+                    </p>
+                    <a href="./#header" class="start-bloggers__link u-link--purple">
+                        Начать зарабатывать
+                    </a>
+                </div>
+
+                <div class="start-brands">
+                    <h3 class="start-brands__title">Брендам</h3>
+                    <p class="start-brands__description">
+                        Найдите блогера под свой бюджет
+                    </p>
+                    <a href="./#header" class="start-brands__link u-link--purple">
+                        Смотреть каталог
+                    </a>
+                </div>
+
+            </div>
+
+            <picture class="start__decoration start__decoration--top">
+                <img src="../images/common/start/start-decoration-top.webp" alt="" width="1440" height="118"
+                    loading="lazy" decoding="async" draggable="false" aria-hidden="true">
+            </picture>
+            <picture class="start__decoration start__decoration--bottom">
+                <img src="../images/common/start/start-decoration-bottom.webp" alt="" width="1440" height="149"
+                    loading="lazy" decoding="async" draggable="false" aria-hidden="true">
+            </picture>
+        </section>
+
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer__container u-container">
+
+            <div class="footer__content">
+
+                <div class="footer__head">
+                    <a href="./#header" class="footer__logo">Blogings</a>
+                    <a href="./#header" class="footer__socials" aria-label="Telegram">
+                        <img src="../images/common/tg-icon.svg" alt="Telegram" width="40" height="31" loading="lazy"
+                            decoding="async" draggable="false">
+                    </a>
+                </div>
+
+                <ul class="footer__policy">
+                    <li class="footer__policy-item">
+                        <a href="./#footer" class="footer__policy-link">
+                            Пользовательское соглашение
+                        </a>
+                    </li>
+                    <li class="footer__policy-item">
+                        <a href="./#footer" class="footer__policy-link">
+                            Политика в отношении обработки персональных данных
+                        </a>
+                    </li>
+                    <li class="footer__policy-item">
+                        <a href="./#footer" class="footer__policy-link">
+                            Политика использования Cookie
+                        </a>
+                    </li>
+                    <li class="footer__policy-item">
+                        <a href="./#footer" class="footer__policy-link">
+                            Оферта с рекламодателем
+                        </a>
+                    </li>
+                    <li class="footer__policy-item">
+                        <a href="./#footer" class="footer__policy-link">
+                            Оферта с блогером
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="footer__info">
+                    <dl class="footer__info-list">
+                        <div class="footer__info-item">
+                            <dt>Юридическое название</dt>
+                            <dd>Индивидуальный предприниматель Желнинский Даниил Игоревич</dd>
+                        </div>
+                        <div class="footer__info-item">
+                            <dt>Электронная почта</dt>
+                            <dd>
+                                <a href="mailto:support@blogings.ru">support@blogings.ru</a>
+                            </dd>
+                        </div>
+                        <div class="footer__info-item">
+                            <dt>ИНН / ОГРН</dt>
+                            <dd>343520558016 / 325344300071822</dd>
+                        </div>
+                        <div class="footer__info-item">
+                            <dt>Юридический адрес</dt>
+                            <dd>
+                                Волгоградская область, г.о. город Волжский, г. Волжский
+                            </dd>
+                        </div>
+                    </dl>
+                </div>
+
+                <div class="footer__copyright">
+                    Copyright © 2026 Все права защищены
+                </div>
+
+            </div>
+
+        </div>
+    </footer>
+
+
+    <script src="../js/advertiser.js" type="module"></script>
+</body>
+
+</html>
